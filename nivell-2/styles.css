@@ -1,0 +1,168 @@
+* {
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    padding: 15px;
+    width: 100%;
+}
+
+#grey-background {
+    background-color: rgb(47, 47, 67);
+    padding: 15px;
+    display: flex;
+}
+
+.red1 {
+    background-color: red;
+    margin: 5px;
+    padding: 15px;
+    flex: 1 1 auto;
+}
+
+.red2 {
+    background-color: red;
+    margin: 5px;
+    padding: 15px;
+    flex: 4 1 auto;
+}
+
+.red3 {
+    background-color: red;
+    margin: 5px;
+    padding: 15px;
+    flex: 1 1 auto;
+}
+
+#orange-background {
+    background-color: orange;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.yellowline {
+    background-color: rgb(244, 244, 149);
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.body-background {
+    margin-top: 20px;
+    background-color: black;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+}
+
+#blue-background {
+    background-color: rgb(35, 35, 101);
+    padding: 15px;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.bluecolumn {
+    background-color: rgb(66, 66, 190);
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    flex-grow: 1;
+    flex-basis: 40%;
+}
+
+.bottomblue {
+    background-color: rgb(67, 188, 188);
+    padding: 15px;
+    margin: 5px;
+    align-self: flex-end;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+#red-background {
+    background-color: rgb(242, 74, 74);
+    padding: 15px;
+    width: 30%;
+    margin-left: 15px;
+}
+
+.yellowcolumn {
+    background-color: rgb(248, 248, 152);
+    padding: 15px;
+    margin: 10px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+}
+
+#yellow-background {
+    background-color: rgb(224, 224, 123);
+    padding: 15px;
+    width: 100%;
+}
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+    * {
+        background-color: bisque;
+    }
+    .body-background {
+        margin-top: 20px;
+        background-color: rgb(185, 173, 7);
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #blue-background {
+        width: 100%;
+    }
+
+    #red-background {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    * {
+        background-color: rgb(134, 78, 11);
+    }
+
+    #grey-background {
+        flex-direction: column;
+    }
+    .body-background {
+        margin-top: 20px;
+        background-color: rgb(185, 173, 7);
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #blue-background {
+        width: 100%;
+    }
+
+    #red-background {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .bluecolumn {
+        flex-basis: 100%;
+    }
+}
